@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Text to Speech | Multilingual App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌐 Text to Speech (Multilingual)</h1>
+    <p class="subtitle">Type a sentence in Hindi, English, or a mix (Hinglish) and click Speak!</p>
+
+    <textarea id="inputText" placeholder="Example: नमस्ते, how are you today?"></textarea>
+
+    <div class="controls">
+      <div class="control">
+        <label for="voiceSelect">Voice:</label>
+        <select id="voiceSelect"></select>
+      </div>
+
+      <div class="control">
+        <label for="rate">Rate: <span id="rateVal">1</span></label>
+        <input id="rate" type="range" min="0.5" max="2" step="0.1" value="1" />
+      </div>
+
+      <div class="control">
+        <label for="pitch">Pitch: <span id="pitchVal">1</span></label>
+        <input id="pitch" type="range" min="0" max="2" step="0.1" value="1" />
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button id="speakBtn">🔊 Speak</button>
+      <button id="pauseBtn" class="secondary">⏸ Pause</button>
+      <button id="resumeBtn" class="secondary">▶ Resume</button>
+      <button id="cancelBtn" class="secondary">✖ Stop</button>
+    </div>
+
+    <footer>
+      <p>Developed by Riti Kumari | Uses <strong>Web Speech API</strong> | Browser-based multilingual TTS</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
