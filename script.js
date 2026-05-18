@@ -1,4 +1,4 @@
-// Get elements
+
 const inputText = document.getElementById("inputText");
 const voiceSelect = document.getElementById("voiceSelect");
 const rate = document.getElementById("rate");
@@ -13,7 +13,7 @@ const cancelBtn = document.getElementById("cancelBtn");
 
 let voices = [];
 
-// Load voices
+
 function populateVoices() {
   voices = speechSynthesis.getVoices();
   voiceSelect.innerHTML = "";
@@ -27,11 +27,11 @@ function populateVoices() {
 
 speechSynthesis.onvoiceschanged = populateVoices;
 
-// Update display values
+
 rate.addEventListener("input", () => (rateVal.textContent = rate.value));
 pitch.addEventListener("input", () => (pitchVal.textContent = pitch.value));
 
-// Speak function
+
 function speakText() {
   const text = inputText.value.trim();
   if (!text) {
@@ -51,7 +51,7 @@ function speakText() {
   speechSynthesis.speak(utterance);
 }
 
-// Buttons
+
 speakBtn.addEventListener("click", speakText);
 pauseBtn.addEventListener("click", () => {
   if (speechSynthesis.speaking && !speechSynthesis.paused) {
