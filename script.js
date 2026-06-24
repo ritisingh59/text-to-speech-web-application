@@ -11,7 +11,9 @@ const pauseBtn = document.getElementById("pauseBtn");
 const resumeBtn = document.getElementById("resumeBtn");
 const cancelBtn = document.getElementById("cancelBtn");
 
+
 let voices = [];
+
 
 
 function populateVoices() {
