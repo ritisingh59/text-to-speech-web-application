@@ -57,8 +57,15 @@ function speakText() {
 speakBtn.addEventListener("click", speakText);
 pauseBtn.addEventListener("click", () => {
   if (speechSynthesis.speaking && !speechSynthesis.paused) {
+  
+
     speechSynthesis.pause();
   }
+
+
+
+
+  
 });
 resumeBtn.addEventListener("click", () => {
   if (speechSynthesis.paused) {
