@@ -12,7 +12,8 @@ const resumeBtn = document.getElementById("resumeBtn");
 const cancelBtn = document.getElementById("cancelBtn");
 
 
-let voices = [];
+
+let voice = [];
 
 
 
